@@ -1,4 +1,4 @@
-package com.cf.MVC;
+package com.cf.mycountry.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

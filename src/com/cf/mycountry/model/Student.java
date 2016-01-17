@@ -1,4 +1,4 @@
-package com.cf.DAO;
+package com.cf.mycountry.model;
 
 public class Student {
 	
