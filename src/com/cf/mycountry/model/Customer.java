@@ -1,5 +1,8 @@
 package com.cf.mycountry.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Customer {
 	
 	private String guid;
@@ -8,6 +11,8 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private String ContactNo;
+	private List<Purchase> purchase = new ArrayList<Purchase>();
+	
 	
 	
 	public Customer() 
@@ -85,7 +90,16 @@ public class Customer {
 	public void setContactNo(String contactNo) {
 		ContactNo = contactNo;
 	}
-	
-	
+
+
+	public List<Purchase> getPurchase() {
+		return purchase;
+	}
+
+
+	public void setPurchase(List<Purchase> purchase) {
+		this.purchase = purchase;
+	}
+
 	
 }
