@@ -8,6 +8,18 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
 
+<bean id ="dataSource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
+  
+  <property name="connectionCachingEnabled" value="true"/>
+  <property name = "URL" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+  <property name="user" value="system"/>
+  <property name="password" value="aaghaZ12"/>
+
+</bean>
+
+
+
+
 <mvc:annotation-driven></mvc:annotation-driven>
 <context:component-scan base-package="com.cf"></context:component-scan>
 
